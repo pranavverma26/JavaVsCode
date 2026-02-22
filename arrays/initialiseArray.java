@@ -1,0 +1,13 @@
+package arrays;
+
+public class initialiseArray {
+    public static void main(String[] args) {
+        int [] arr = {10,20,30,40,50,60,-9,34,3,5,2,7,3,5};
+        int n = arr.length;
+        System.out.println(n);
+        for(int i =0;i<arr.length;i++){
+            System.out.print(arr[i]+ " ");
+        }
+    
+    }
+}
