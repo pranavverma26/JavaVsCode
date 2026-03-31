@@ -9,7 +9,6 @@ public class unbounded_Knapsack {
         if(wt[i]>c) return dp[i][c]=skip;
         int pick = val[i] + profit(i,wt,val,c-wt[i],dp);
         return dp[i][c]= Math.max(pick,skip);
-
     }
     public static void main(String[] args) {
 
