@@ -11,7 +11,7 @@ public class Knapsack {
     public static void main(String[] args) {
 
         int[] val ={5,3,7,16};
-        int[] wt ={1,2,8,8};
+        int[] wt ={1,2,8,9};
         int c=8;
         int[][] dp = new int[wt.length][c+1];
         for(int i=0;i<wt.length;i++){
