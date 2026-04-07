@@ -1,7 +1,7 @@
 public class KnapSackTabulation {
     public static void main(String[] args) {
-        int[] wt ={1,2,8,9};
-        int[] val ={5,3,7,16};
+        int[] wt ={2,3,4,5};
+        int[] val ={1,2,5,6};
         int c=8;
         int[][] dp = new int[wt.length][c+1];
         for(int i=0;i<dp.length;i++){
@@ -16,6 +16,5 @@ public class KnapSackTabulation {
             }
         }
         System.out.println(dp[wt.length-1][c]);
-    }
-    
+    }    
 }
