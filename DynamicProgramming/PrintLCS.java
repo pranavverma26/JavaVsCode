@@ -22,7 +22,6 @@ public class PrintLCS {
         ans.reverse();
         System.out.println(ans);
         }
-
     }
     
 
