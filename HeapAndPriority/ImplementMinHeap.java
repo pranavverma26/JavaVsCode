@@ -50,7 +50,6 @@ class Heap{
         if(idx==minIdx) return;
         swap(idx,minIdx);
         DownHeapify(minIdx);
-
     }
 }
 
