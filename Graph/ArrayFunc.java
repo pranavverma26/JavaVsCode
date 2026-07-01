@@ -29,8 +29,6 @@ public class ArrayFunc {
         return;
     }
     // private static boolean CheckPrime(int j){ use recursion
-        
-
     // }
     private static void swap(int[] arr,int i,int j){
         int temp=arr[i];
@@ -38,7 +36,6 @@ public class ArrayFunc {
         arr[j]=temp;
         return;
     }
-
     public static void main(String[] args) {
         int[] arr = {8,13,15,23,51};
         for(int ele : arr){
@@ -77,7 +74,34 @@ public class ArrayFunc {
         System.out.println("Key: "+ key + ",Value: " + map.get(key));
 }
 
+     int num = 64;
+
+     if ((num & 1) == 0) {
+            System.out.println(num + " is Even");
+        } else {
+            System.out.println(num + " is Odd");
+    }
+
+     // Swapping 
+     int a =3;
+     int b=4;
+        a = a ^ b;
+        b = a ^ b;
+        a = a ^ b;
+
+            // reverse bits
+            int n = 13;
+        int rev = 0;
+
+        while (n > 0) {
+            rev = (rev << 1) | (n & 1);
+            n = n >> 1;
+        }
+
+        System.out.println(rev);
+
+
+
 
     }
-    
 }
