@@ -8,7 +8,7 @@ public class Intro1 {
     // To save space we use adjacency list and some time to save time also
 
     // Bipartite graph :- When we can color each node of the graph with either red or blue and adjacent nodes must have different colors.
-    // Any acyclic graoh is bipartite graph.
+    // Any acyclic graph is bipartite graph.
     // Any cyclic graph  with even cyclic length is bipartite
 
 }
