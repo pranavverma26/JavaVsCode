@@ -36,6 +36,11 @@ class Solution {
 
  */
 public class Basic1 {
+    private static void reverse(Node idx){
+        if(idx == null) return;
+        reverse(idx.next);
+        System.out.print(idx.value+" ");
+    }
     public static void main(String[] args) {
         
         Node a = new Node(10);  // head node
@@ -72,6 +77,20 @@ public class Basic1 {
         System.out.println(a.next.next.value);
         System.out.println(a.next.next.next.value);
         System.out.println(a.next.next.next.next.value);
+
+        // Q1.
+        Node idx=a;
+        reverse(idx);
+
+        // Q2. 
+        int len=0;
+        while(idx!=null){
+            len++;
+            idx=idx.next;
+        }
+        if(len%2==0){
+            
+        }
 
 
     }

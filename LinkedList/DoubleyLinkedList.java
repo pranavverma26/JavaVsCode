@@ -20,6 +20,8 @@ public class DoubleyLinkedList {
     b.next = c ; c.prev = b;
     c.next = d ; d.prev = c;
    // b.next = c ; c.prev = b;
+
+   
     
 }
 }
