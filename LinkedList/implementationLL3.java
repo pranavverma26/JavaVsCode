@@ -125,10 +125,9 @@ public class implementationLL3 {
         list.size();
         list.display(); 
         list.insert(3, 35);
-        list.getElement(11);
         list.display();  
-
-        list.DelEle(2);
-        list.display();
+        // list.getElement(11);
+        // list.DelEle(2);
+        // list.display();
     }
 }

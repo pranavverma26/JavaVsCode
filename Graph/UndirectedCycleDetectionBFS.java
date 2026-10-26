@@ -10,7 +10,7 @@ class Pair {
     }
 }
 
-public class CycleDetectionBFS {
+public class UndirectedCycleDetectionBFS {
     public static void main(String[] args) {
 
         int[][] adj = {

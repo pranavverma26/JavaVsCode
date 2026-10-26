@@ -83,25 +83,25 @@ public class Traversals {
 //        b(2)      c(3)
 //       /   \      /   \
 //    d(4)  e(5)  f(6)  g(7)
-        System.out.print("Preorder : ");
-        preorder(a);
-        System.out.println();
-        System.out.print("Inorder : ");
-        inorder(a);
-        System.out.println();
-        System.out.print("Postorder : ");
-        postorder(a);
-        System.out.println();
+        // System.out.print("Preorder : ");
+        // preorder(a);
+        // System.out.println();
+        // System.out.print("Inorder : ");
+        // inorder(a);
+        // System.out.println();
+        // System.out.print("Postorder : ");
+        // postorder(a);
+        // System.out.println();
         System.out.print("LevelOrder1 : ");
         levelOrder(a);
-        System.out.println();
-        // System.out.print("Enter n : ");
-        // n=sc.nextInt();
-        System.out.print("LevelOrder2 : ");
-        for(int x=0;x<4;x++){
-            n=x;
-        printLevel(a,0);
-        }
+        // System.out.println();
+        // // System.out.print("Enter n : ");
+        // // n=sc.nextInt();
+        // System.out.print("LevelOrder2 : ");
+        // for(int x=0;x<4;x++){
+        //     n=x;
+        // printLevel(a,0);
     }
-    
 }
+    
+

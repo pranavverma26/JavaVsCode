@@ -48,17 +48,17 @@ public class implementation1 {
         int s=a.val,b=min(a.left),c=min(a.right);
         return Math.min(s,Math.min(b,c));
     }
-    //  private static int size(Node a,int s){
-    //     if(a==null) return s;
-    //     else s++;
-    //     s=size(a.left,s);
-    //     s=size(a.right,s);
-    //     return s;
-    // }
-    private static int size(Node a){
-        if(a==null) return 0;
-        return 1+ size(a.left)+size(a.right);
+     private static int size(Node a,int s){
+        if(a==null) return s;
+        s++;
+        s=size(a.left,s);
+        s=size(a.right,s);
+        return s;
     }
+    // private static int size(Node a){
+    //     if(a==null) return 0;
+    //     return 1+ size(a.left)+size(a.right);
+    // }
 
     public static void main(String[] args) {
         Node a = new Node(1); // a is the  root
@@ -87,16 +87,16 @@ public class implementation1 {
         // System.out.println(b.val);
         // System.out.println(e.val);
         // System.out.println(a.left.right.val);
-        Display(a);
-        System.out.println();
-        System.out.println(Sum(a));
-        System.out.println(product(a));
-        // product of non-zero numbers
-        System.out.println(non(a));
-        System.out.println(max(a));
-         System.out.println(min(a));
-         System.out.println(size(a));
-         System.out.println(level(a));
+        // Display(a);
+        // System.out.println();
+        // System.out.println(Sum(a));
+        // System.out.println(product(a));
+        // // product of non-zero numbers
+        // System.out.println(non(a));
+        // System.out.println(max(a));
+        //  System.out.println(min(a));
+         System.out.println(size(a,0));
+        //  System.out.println(level(a));
     //         1
     //       /   \
     //      2     3

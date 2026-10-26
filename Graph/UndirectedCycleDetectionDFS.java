@@ -1,5 +1,5 @@
 package Graph;
-public class CycleDetectionDFS {
+public class UndirectedCycleDetectionDFS {
     static boolean flag=false;
     public static void dfs(int[][] adj,boolean[] vis,int child,int parent){
         vis[child]=true;

@@ -9,7 +9,7 @@ class Student implements Comparable<Student>{
         this.perc=perc;
     }
     public int compareTo(Student s){
-        return s.rno-this.rno;
+        return this.rno-s.rno;
     }
 }
 public class CustomComparator {
@@ -20,12 +20,13 @@ public class CustomComparator {
 
     }
     public static void main(String[] args) {
-        Student[] s= new Student[5];
+        Student[] s= new Student[6];
         s[0] = new Student("Pranav",88,100);
         s[1] = new Student("Ashish",77,98.5);
         s[2] = new Student("Naman",93,99);
         s[3] = new Student("Ansh",9,99.97);
         s[4] = new Student("Arjun",8,96);
+        s[5] = new Student("Ritwik",78,92);
         Arrays.sort(s);
         print(s);
     }

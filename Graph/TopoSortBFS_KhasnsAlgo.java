@@ -15,10 +15,11 @@ public class TopoSortBFS_KhasnsAlgo {
             int val = q.remove();
             ans.add(val);
             for(int j=0;j<adj[val].length;j++){
-                indeg[adj[val][j]]--;
-                if(indeg[adj[val][j]]==0 && !vis[adj[val][j]]){
-                    q.add(adj[val][j]);
-                    vis[adj[val][j]]=true;
+                int num = adj[val][j];
+                indeg[num]--;
+                if(indeg[num]==0 && !vis[num]){
+                    q.add(num);
+                    vis[num]=true;
                 }
             }
         }
